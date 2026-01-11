@@ -8,3 +8,5 @@ flutter_native_splash:
   android_gravity: center
   ios_content_mode: center
   web_image_mode: center
+  fullscreen: true
+  android_screen_orientation: sensorLandscape
