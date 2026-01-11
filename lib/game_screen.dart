@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 import 'globals.dart';
 
 class GameScreen extends StatefulWidget {
@@ -242,7 +243,7 @@ class _GameScreenState extends State<GameScreen> {
                             icon: const Icon(Icons.share),
                             color: Colors.black,
                             onPressed: () {
-                              // TODO: Implement share functionality
+                              Share.share('I scored $rightCounter in catdog, now you try');
                             },
                           ),
                         ),
