@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'game_screen.dart';
+import 'settings_screen.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -55,7 +56,11 @@ class MainPage extends StatelessWidget {
                       child: IconButton(
                         icon: const Icon(Icons.settings),
                         color: Colors.black,
-                        onPressed: () {
+                        onNavigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => const SettingsScreen(),
+                            ),
+                          );
                           // TODO: Implement settings functionality
                         },
                       ),
